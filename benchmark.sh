@@ -1,4 +1,4 @@
-cd lab
+cd src
 
 echo "Benchmark generated on $(date)  " > ./../lab.md
 echo "Average of 10 generating of 1 000 000 hashes (sha256)  " >> ./../lab.md
@@ -16,3 +16,12 @@ echo "| Python | $(python lab.py) |  " >> ./../lab.md
 go build -o lab_go lab.go
 
 echo "| Go | $(./lab_go) |  " >> ./../lab.md
+
+cd ..
+
+cargo build --release
+
+echo "| Rust | $(./target/release/lab.exe) |  " >> ./lab.md
+
+echo "  "
+echo "Finish"

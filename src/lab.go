@@ -12,7 +12,7 @@ func main() {
 
 	for i := 0; i < 10; i++ {
 		start := time.Now().UnixMilli()
-		for j := 0; j < 1_000_000; j++ {
+		for j := 0; j < 1000000; j++ {
 			first := sha256.New()
 			first.Write([]byte("hello world"))
 		}

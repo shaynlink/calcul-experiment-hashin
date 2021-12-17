@@ -11,7 +11,7 @@ results = []
 
 for i in range(10):
   start = time.time() * 1000
-  for j in range(1_000_000):
+  for j in range(1000000):
     hash('hello world'.encode('utf-8'))
   end = time.time() * 1000
   results.append(end - start)
