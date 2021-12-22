@@ -17,6 +17,8 @@ jobs:
     - uses: actions/setup-python@v2
     - uses: actions/setup-go@v2
     - uses: ATiltedTree/setup-rust@v1
+      with:
+        rust-version: stable
     - uses: actions/setup-ruby@v1
     - uses: aminya/setup-cpp@v1
  
